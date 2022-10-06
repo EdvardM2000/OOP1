@@ -1,0 +1,34 @@
+@startuml
+
+class Car {
+Private String Make
+Private String Model
+Private String bodyStyle
+Private String driver
+Private int Year
+---Getter---
+public Driver getdriver
+---Setter---
+public Driver setDriver
+
+}
+
+Driver --> Car
+Car --> Task2Main
+
+Class Task2Main
+
+
+Driver --> Task2Main
+
+
+Class Driver {
+Private String name
+Private int age
+
+
+}
+
+
+
+@enduml

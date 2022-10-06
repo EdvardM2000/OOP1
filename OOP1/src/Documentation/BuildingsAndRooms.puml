@@ -1,0 +1,49 @@
+@startuml
+Class Room{
+Private final String wall
+Private final int numberOfDoors
+Private final int numberofLamps
+Private final int numberOfWindows
+
+PublicRoom ();
+PublicString getWall()
+public int getNumberOfDoors()
+public int getNumberOfLamps()
+public int getNumberOfWindows()
+public int getNumberOfWindows()
+
+
+}
+
+Class Buildings {
+public class Building
+Private final ArrayList<Rooms> rooms
+Private final int numberOfRooms
+Private final int numberOfFloors
+Private final boolean isOfficeBuilding
+
+Public Building
+Public Arraylist<Room>
+Public int getNumberofRooms()
+Public int getNumberofFloors()
+
+
+}
+
+Room --> Buildings
+Room --> Task2Main
+Buildings --> Task2Main
+
+Class Task2Main {
+Room room1 = new Room
+Room room2 = new Room
+Room room3 = new Room
+
+ArrayList<Room> rooms = new ArrayList
+rooms.add(room1);
+rooms.add(room2);
+rooms.add(room3);
+----
+Building building1 = new Building(rooms)
+}
+@enduml
